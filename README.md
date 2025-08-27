@@ -16,12 +16,12 @@ is a div that acts as a container for the pieces of the design. Just copy the
 container and all of the elements inside and paste where you want it.
 
 # Current designs:
-- Kagome's School Outfit Horizontal [[class]kagomeSchool]
-- Inuyasha Horizontal [[class]inuyasha]
-- Sango's Casual Outfit Horizontal [[class]sangoCasual]
-- Miroku Horizontal [[class]miroku]
-- Shippo Horizontal [[class]shippo]
-- Kirara Horizontal [[class]kirara]
-- Inuyasha's Kotodama [[class]kotodama]
-- Kagome's School Scarf [[class]schoolScarf]
-- Inuyasha's Demon Eyes and Stripes [[class]demonInuEyes]
+- Kagome's School Outfit Horizontal (**class:** kagomeSchool)
+- Inuyasha Horizontal (**class:** inuyasha)
+- Sango's Casual Outfit Horizontal (**class:** sangoCasual)
+- Miroku Horizontal (**class:** miroku)
+- Shippo Horizontal (**class:** shippo)
+- Kirara Horizontal (**class:** kirara)
+- Inuyasha's Kotodama (**class:** kotodama)
+- Kagome's School Scarf (**class:** schoolScarf)
+- Inuyasha's Demon Eyes and Stripes (**class:** demonInuEyes)
