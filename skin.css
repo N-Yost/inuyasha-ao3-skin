@@ -18,7 +18,7 @@
 /*****************************************/
 /*****************************************/
 /*********** COMMON SETTINGS *************/
-.beads, .scarf, .sangoCasual,
+.kotodama, .schoolScarf, .sangoCasual,
 .miroku, .demonInuEyes {
   display: flex;
   flex-direction: row;
@@ -29,8 +29,8 @@
     transform: rotateY(180deg);
 }
 
-/*********** BEADS *************/
-.bead {
+/*********** kotodama *************/
+.kotodama>.bead {
   margin-left: 3.3vw;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -43,11 +43,11 @@
   border-radius: 50%;
 }
 
-.first {
+.kotodama>.first {
   margin-left: 0;
 }
 
-.fang {
+.kotodama>.fang {
   width: 4vw;
   height: 7.8vw;
   background-color: rgb(189,178,160);
@@ -58,7 +58,7 @@
 }
 
 /*********** SCARF *************/
-.scarfLeft {
+.schoolScarf>.scarfLeft {
    width: 0;
    height: 0;
    border-style: solid;
@@ -66,7 +66,7 @@
    border-color: transparent rgb(66,111,91) transparent transparent;
 }
 
-.scarfLeft::before {
+.schoolScarf>.scarfLeft::before {
     content: '';
     width: 0;
     height: 0;
@@ -79,7 +79,7 @@
     transform: scale(105%);
 }
 
-.scarfLeft::after {
+.schoolScarf>.scarfLeft::after {
     content: '';
     background-color: white;
     position: absolute;
@@ -92,14 +92,14 @@
     border: 2px solid black;
 }
 
-.scarfGap {
+.schoolScarf>.scarfGap {
     width: 5vw;
     height: 7vw;
     background-color: rgb(66,111,91);
     border: 2px solid black;
 }
 
-.scarfGap::after {
+.schoolScarf>.scarfGap::after {
     content: '';
     background-color: white;
     position: absolute;
@@ -109,7 +109,7 @@
     top: 1vw;
 }
 
-.scarfRight {
+.schoolScarf>.scarfRight {
     width: 0;
    height: 0;
    border-style: solid;
@@ -117,7 +117,7 @@
    border-color: rgb(66,111,91) transparent transparent transparent;
 }
 
-.scarfRight::before {
+.schoolScarf>.scarfRight::before {
     content: '';
     width: 0;
     height: 0;
@@ -131,7 +131,7 @@
     transform: scale(105%);
 }
 
-.scarfRight::after {
+.schoolScarf>.scarfRight::after {
     content: '';
     background-color: white;
     position: absolute;
@@ -144,7 +144,7 @@
     border: 2px solid black;
 }
 
-.scarfKnot {
+.schoolScarf>.scarfKnot {
     position: absolute;
     width: 5vw;
     height: 3vw;
@@ -154,7 +154,7 @@
     border: 2px solid black;
 }
 
-.scarfKnot::after {
+.schoolScarf>.scarfKnot::after {
     content: '';
     background-color: white;
     position: absolute;
@@ -164,7 +164,7 @@
     top: 1vw;
 }
 
-.scarfRed1 {
+.schoolScarf>.scarfRed1 {
     position: absolute;
     width: 3vw;
     height: 5vw;
@@ -177,7 +177,7 @@
     transform: rotate(15deg);
 }
 
-.scarfRed2 {
+.schoolScarf>.scarfRed2 {
     position: absolute;
     width: 3vw;
     height: 5vw;
@@ -266,7 +266,7 @@
 }
 
 /*********** DEMON INU EYES *************/
-.demonInuEyeLeft {
+.demonInuEyes>.demonInuEyeLeft {
     height: 4vw;
     width: 6vw;
     position: absolute;
@@ -278,7 +278,7 @@
     left: 15vw;
 }
 
-.demonInuEyeLeft::after {
+.demonInuEyes>.demonInuEyeLeft::after {
     content: '';
     height: 1.6vw;
     width: .5vw;
@@ -291,7 +291,7 @@
     box-shadow: 0 0 0 .7vw rgb(63, 105, 121);
 }
 
-.demonInuEyeLeft::before {
+.demonInuEyes>.demonInuEyeLeft::before {
     content: '';
     height: 1vw;
     width: 10vw;
@@ -304,7 +304,7 @@
     z-index: 3;
 }
 
-.demonInuEyeRight {
+.demonInuEyes>.demonInuEyeRight {
     height: 4vw;
     width: 6vw;
     position: absolute;
@@ -316,7 +316,7 @@
     left: 30vw;
 }
 
-.demonInuEyeRight::after {
+.demonInuEyes>.demonInuEyeRight::after {
     content: '';
     height: 1.6vw;
     width: .5vw;
@@ -329,7 +329,7 @@
     box-shadow: .2vw 0 0 .7vw rgb(63, 105, 121);
 }
 
-.demonInuEyeRight::before {
+.demonInuEyes>.demonInuEyeRight::before {
     content: '';
     height: 1vw;
     width: 10vw;
@@ -342,7 +342,7 @@
     z-index: 3;
 }
 
-.demonInuStripeLeft {
+.demonInuEyes>.demonInuStripeLeft {
     height: 1.7vw;
     width: 3vw;
     position: absolute;
@@ -353,7 +353,7 @@
     top: 5.1vw;
 }
 
-.demonInuStripeLeft::after {
+.demonInuEyes>.demonInuStripeLeft::after {
     content: '';
     height: 0;
     width: 0;
@@ -364,7 +364,7 @@
     border-color: transparent transparent transparent rgb(153, 84, 142);
 }
 
-.demonInuStripeLeft::before {
+.demonInuEyes>.demonInuStripeLeft::before {
     content: '';
     height: 2vw;
     width: 3vw;
@@ -376,7 +376,7 @@
     top: -.2vw;
 }
 
-.demonInuStripeRight {
+.demonInuEyes>.demonInuStripeRight {
     height: 1.7vw;
     width: 3vw;
     position: absolute;
@@ -387,7 +387,7 @@
     top: 5.1vw;
 }
 
-.demonInuStripeRight::after {
+.demonInuEyes>.demonInuStripeRight::after {
     content: '';
     height: 2vw;
     width: 3vw;
@@ -398,7 +398,7 @@
     top: -.2vw;
 }
 
-.demonInuStripeRight::before {
+.demonInuEyes>.demonInuStripeRight::before {
     content: '';
     height: 0;
     width: 0;
