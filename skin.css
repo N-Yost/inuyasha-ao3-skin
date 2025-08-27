@@ -1,0 +1,410 @@
+/* styling for working and not uploaded */
+
+.container>div {
+    margin-bottom: 10vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 53vw auto;
+  margin-top: 10vw;
+}
+
+.container>div {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/*****************************************/
+/*****************************************/
+/*********** COMMON SETTINGS *************/
+.beads, .scarf, .sangoCasual,
+.miroku, .demonInuEyes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+/*********** BEADS *************/
+.bead {
+  margin-left: 3.3vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 2vw;
+  height: 2vw;
+  background: rgb(188,173,208);
+  box-shadow:
+    1.1vw 1.1vw 0 .9vw rgb(32,23,43),
+    .8vw .8vw 0 1.7vw rgb(79,49,85);
+  border-radius: 50%;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.fang {
+  width: 4vw;
+  height: 7.8vw;
+  background-color: rgb(189,178,160);
+  box-shadow: .5vw .3vw rgb(135, 124, 108);
+  border-radius: 50%;
+  margin-left: 2vw;
+  margin-right: 1vw;
+}
+
+/*********** SCARF *************/
+.scarfLeft {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 24.8vw 6.8vw 0;
+   border-color: transparent rgb(66,111,91) transparent transparent;
+}
+
+.scarfLeft::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 24.8vw 7vw 0;
+    border-color: transparent black transparent transparent;
+    position: absolute;
+    left: -.4vw;
+    z-index: -1;
+    transform: scale(105%);
+}
+
+.scarfLeft::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: .5vw;
+    height: 21.8vw;
+    transform: rotate(-75deg);
+    top: -8.3vw;
+    left: 13.8vw;
+    border-radius: 25% 38% 25% 25%;
+    border: 2px solid black;
+}
+
+.scarfGap {
+    width: 5vw;
+    height: 7vw;
+    background-color: rgb(66,111,91);
+    border: 2px solid black;
+}
+
+.scarfGap::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 3.1vw;
+    height: .5vw;
+    border: 2px solid black;
+    top: 1vw;
+}
+
+.scarfRight {
+    width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 6.8vw 24.8vw 0 0;
+   border-color: rgb(66,111,91) transparent transparent transparent;
+}
+
+.scarfRight::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7vw 24.8vw 0 0;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: -.01vw;
+    right: -.5vw;
+    z-index: -1;
+    transform: scale(105%);
+}
+
+.scarfRight::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: .5vw;
+    height: 21.8vw;
+    transform: rotate(75deg);
+    top: -8.3vw;
+    right: 13.8vw;
+    border-radius: 25% 38% 25% 25%;
+    border: 2px solid black;
+}
+
+.scarfKnot {
+    position: absolute;
+    width: 5vw;
+    height: 3vw;
+    background-color: rgb(66,111,91);
+    top: 5.5vw;
+    left: 23.8vw;
+    border: 2px solid black;
+}
+
+.scarfKnot::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 4.75vw;
+    height: .5vw;
+    border: 2px solid black;
+    top: 1vw;
+}
+
+.scarfRed1 {
+    position: absolute;
+    width: 3vw;
+    height: 5vw;
+    background-color: rgb(174,41,84);
+    border: 2px solid black;
+    border-radius: 50% 0 50% 0;
+    top: 7.5vw;
+    left: 23.5vw;
+    z-index: -1;
+    transform: rotate(15deg);
+}
+
+.scarfRed2 {
+    position: absolute;
+    width: 3vw;
+    height: 5vw;
+    background-color: rgb(174,41,84);
+    border: 2px solid black;
+    border-radius: 50% 0 50% 0;
+    top: 7vw;
+    left: 26vw;
+    z-index: -1;
+    transform: rotate(-15deg);
+}
+
+/*********** SANGO CASUAL *************/
+.sangoCasual>.yukata {
+    height: 3vw;
+    width: 27vw;
+    background-color: rgb(230, 204, 215);
+    position: absolute;
+    overflow: hidden;
+}
+
+.sangoCasual>.yukata::after {
+    content: '';
+    height: 5vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(144, 48, 69);
+    box-shadow: 12vw -4vw rgb(144, 48, 69);
+    transform: rotate(20deg);
+    top: -1vw;
+}
+
+.sangoCasual>.skirt {
+    height: 3vw;
+    width: 26vw;
+    background-color: rgb(89, 115, 29);
+    position: absolute;
+    overflow: hidden;
+    left: 27vw;
+}
+
+/*********** MIROKU *************/
+.miroku>.robe1 {
+    height: 3vw;
+    width: 26vw;
+    position: absolute;
+    background-color: rgb(103, 89, 151);
+}
+
+.miroku>.robe1::after {
+    content: '';
+    position: absolute;
+    left: 24vw;
+    height: 2.95vw;
+    width: 5vw;
+    transform:  skew(-25deg);
+    background-color: rgb(103, 89, 151);
+}
+
+.miroku>.robe1::before {
+    content: '';
+    height: 1vw;
+    width: 1vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(202, 229, 240);
+    top: 2.2vw;
+    left: 15vw;
+    box-shadow: 
+        .5vw -.8vw rgb(202, 229, 240),
+        1vw -1.6vw rgb(202, 229, 240),
+        1.5vw -2.4vw rgb(202, 229, 240),
+        3vw 0 rgb(202, 229, 240),
+        3.5vw -.8vw rgb(202, 229, 240),
+        4vw -1.6vw rgb(202, 229, 240),
+        4.5vw -2.4vw rgb(202, 229, 240);
+}
+
+.miroku>.robe2 {
+    height: 3vw;
+    width: 27vw;
+    position: absolute;
+    background-color: rgb(27, 30, 45);
+    left: 26vw;
+    z-index: -1;
+}
+
+/*********** DEMON INU EYES *************/
+.demonInuEyeLeft {
+    height: 4vw;
+    width: 6vw;
+    position: absolute;
+    border-radius: 25% 50% 50% 40%;
+    border-top: .3vw solid black;
+    border-bottom: .5vw solid black;
+    background-color: rgb(190, 27, 55);
+    transform: skew(10deg);
+    left: 15vw;
+}
+
+.demonInuEyeLeft::after {
+    content: '';
+    height: 1.6vw;
+    width: .5vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(209, 198, 191);
+    transform: skew(-10deg);
+    left: 3.5vw;
+    top: .7vw;
+    box-shadow: 0 0 0 .7vw rgb(63, 105, 121);
+}
+
+.demonInuEyeLeft::before {
+    content: '';
+    height: 1vw;
+    width: 10vw;
+    position: absolute;
+    background-color: black;
+    border-radius: 50% 25% 0% 0%;
+    transform: rotate(20deg) skew(10deg);
+    left: -2vw;
+    top: -1vw;
+    z-index: 3;
+}
+
+.demonInuEyeRight {
+    height: 4vw;
+    width: 6vw;
+    position: absolute;
+    border-radius: 50% 25% 40% 50%;
+    border-top: .3vw solid black;
+    border-bottom: .5vw solid black;
+    background-color: rgb(190, 27, 55);
+    transform: skew(-10deg);
+    left: 30vw;
+}
+
+.demonInuEyeRight::after {
+    content: '';
+    height: 1.6vw;
+    width: .5vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(209, 198, 191);
+    transform: skew(10deg);
+    left: 2vw;
+    top: .7vw;
+    box-shadow: .2vw 0 0 .7vw rgb(63, 105, 121);
+}
+
+.demonInuEyeRight::before {
+    content: '';
+    height: 1vw;
+    width: 10vw;
+    position: absolute;
+    background-color: black;
+    border-radius: 25% 50% 0% 0%;
+    transform: rotate(-20deg) skew(-10deg);
+    left: -2vw;
+    top: -1vw;
+    z-index: 3;
+}
+
+.demonInuStripeLeft {
+    height: 1.7vw;
+    width: 3vw;
+    position: absolute;
+    border-radius: 0 0 50% 40%;
+    background-color: rgb(153, 84, 142);
+    transform: rotate(15deg);
+    left: 13vw;
+    top: 5.1vw;
+}
+
+.demonInuStripeLeft::after {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 2.7vw;
+    border-style: solid;
+    border-width: 1vw 0 .5vw 4vw;
+    border-color: transparent transparent transparent rgb(153, 84, 142);
+}
+
+.demonInuStripeLeft::before {
+    content: '';
+    height: 2vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(153, 84, 142);
+    border-radius: 0 10% 30% 0;
+    transform: rotate(5deg);
+    left: -2.7vw;
+    top: -.2vw;
+}
+
+.demonInuStripeRight {
+    height: 1.7vw;
+    width: 3vw;
+    position: absolute;
+    border-radius: 0 0 40% 50%;
+    background-color: rgb(153, 84, 142);
+    transform: rotate(-15deg);
+    left: 35vw;
+    top: 5.1vw;
+}
+
+.demonInuStripeRight::after {
+    content: '';
+    height: 2vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(153, 84, 142);
+    border-radius: 10% 0% 0% 30%;
+    left: 2.7vw;
+    top: -.2vw;
+}
+
+.demonInuStripeRight::before {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -3.5vw;
+    border-style: solid;
+    border-width: .5vw 4vw 1vw 0;
+    border-color: transparent rgb(153, 84, 142) transparent transparent;
+}
