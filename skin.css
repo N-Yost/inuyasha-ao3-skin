@@ -19,7 +19,8 @@
 /*****************************************/
 /*********** COMMON SETTINGS *************/
 .kotodama, .schoolScarf, .sangoCasual,
-.miroku, .demonInuEyes {
+.miroku, .demonInuEyes, .kagomeSchool,
+.inuyasha, .shippo, .kirara {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -407,4 +408,187 @@
     border-style: solid;
     border-width: .5vw 4vw 1vw 0;
     border-color: transparent rgb(153, 84, 142) transparent transparent;
+}
+
+/*********** KAGOME SCHOOL *************/
+.kagomeSchool>.scarf {
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: transparent transparent transparent rgb(79, 142, 95);
+    border-style: solid;
+    border-width: 1.6vw 0 1.6vw 2vw;
+    z-index: 2;
+}
+
+.kagomeSchool>.scarf::after {
+    content: '';
+    height: .8vw;
+    width: .8vw;
+    position: absolute;
+    background-color: rgb(234, 49, 46);
+    border-radius: 50%;
+    left: -.4vw;
+    top: -.4vw;
+    z-index: 3;
+}
+
+.kagomeSchool>.shirtAndSkirt {
+    height: 3vw;
+    width: 26vw;
+    position: absolute;
+    background-color: white;
+    border: .1vw solid rgb(79, 142, 95);
+}
+
+.kagomeSchool>.shirtAndSkirt::after {
+    content: '';
+    height: 3vw;
+    width: 6vw;
+    position: absolute;
+    background-color: rgb(79, 142, 95);
+    left: 26vw;
+}
+
+.kagomeSchool>.legs {
+    height: 3vw;
+    width: 23vw;
+    position: absolute;
+    background-color: rgb(255, 217, 196);
+    left: 30vw;
+    top: .15vw;
+    z-index: -1;
+}
+
+.kagomeSchool>.legs::after {
+    content: '';
+    height: 3vw;
+    width: 5vw;
+    position: absolute;
+    background-color: white;
+    left: 16vw;
+    box-shadow: 2vw 0 rgb(122, 79, 63);
+}
+
+/*********** INUYASHA *************/
+.inuyasha>.robe {
+    height: 3vw;
+    width: 26vw;
+    position: absolute;
+    background-color: rgb(209, 44, 51);
+    border-radius: 0 15% 15% 0;
+}
+
+.inuyasha>.robe::before {
+    content: '';
+    height: 1vw;
+    width: 1vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(79,49,85);
+    box-shadow: 
+        .5vw .5vw rgb(79,49,85),
+        .9vw 1vw rgb(79,49,85),
+        .6vw 1.6vw rgb(79,49,85),
+        0 2vw rgb(79,49,85);
+}
+
+.inuyasha>.pants {
+    height: 3vw;
+    width: 26vw;
+    position: absolute;
+    background-color: rgb(209, 44, 51);
+    border-radius: 0 25% 25% 0;
+    border-left: 2px solid black;
+    left: 26vw;
+}
+
+.inuyasha>.pants::after {
+    content: '';
+    height: 3vw;
+    width: 2vw;
+    position: absolute;
+    background-color: rgb(234, 192, 152);
+    left: 25vw;
+}
+
+/*********** SHIPPO *************/
+.shippo>.hair {
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(197, 112, 6);
+    z-index: 3;
+}
+
+.shippo>.shirt {
+    height: 3vw;
+    width: 26vw;
+    position: absolute;
+    background-color: rgb(224, 163, 38);
+}
+
+.shippo>.shirt::after {
+    content: '';
+    height: .6vw;
+    width: 26vw;
+    position: absolute;
+    background-color: rgb(104, 185, 178);
+    box-shadow: 0 2.4vw rgb(104, 185, 178);
+}
+
+.shippo>.legs {
+    height: 3vw;
+    width: 27vw;
+    position: absolute;
+    background-color: rgb(237, 213, 141);
+    left: 26vw;
+}
+
+.shippo>.legs::before {
+    content: '';
+    height: 4vw;
+    width: 8vw;
+    position: absolute;
+    background-color: rgb(38, 66, 116);
+    border-radius: 25% 25% 25% 25%;
+    top: -.4vw;
+    left: -.2vw;
+}
+
+/*********** KIRARA *************/
+.kirara>.body {
+    height: 3vw;
+    width: 53vw;
+    position: absolute;
+    background-color: rgb(246, 241, 211);
+    border: .2vw solid rgb(46, 47, 39);
+    overflow: hidden;
+}
+
+.kirara>.body::after {
+    content: '';
+    height: 6vw;
+    width: 1vw;
+    position: absolute;
+    background-color: rgb(46, 47, 39);
+    left: -1vw;
+    top: -1.4vw;
+    transform: rotate(35deg);
+    box-shadow: 
+        35vw -25vw rgb(46, 47, 39),
+        40vw -28vw rgb(46, 47, 39),
+        43vw -30vw rgb(46, 47, 39);
+}
+
+.kirara>.body::before {
+    content: '';
+    height: 1.5vw;
+    width: 1.5vw;
+    position: absolute;
+    background-color: rgb(46, 47, 39);
+    transform: rotate(-30deg) skew(25deg);
+    left: 1.5vw;
+    top: .7vw;
+    z-index: 3;
 }
