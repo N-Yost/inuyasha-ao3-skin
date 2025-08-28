@@ -1,7 +1,7 @@
 /* styling for working and not uploaded */
 
 .container>div {
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 .container {
@@ -13,6 +13,8 @@
 .container>div {
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: pink;
+    z-index: -10;
 }
 
 /*****************************************/
@@ -20,13 +22,32 @@
 /*********** COMMON SETTINGS *************/
 .kotodama, .schoolScarf, .sangoCasual,
 .miroku, .demonInuEyes, .kagomeSchool,
-.inuyasha, .shippo, .kirara {
+.inuyasha, .shippo, .kirara, .hiraikotsu {
   display: flex;
   flex-direction: row;
   position: relative;
+  width: 53vw;
+  height: 10vw;
+}
+
+.kagomeSchool, .inuyasha, .sangoCasual,
+.miroku, .shippo, .kirara {
+    height: 3.5vw;
+}
+
+.kotodama, .demonInuEyes, .hiraikotsu {
+    height: 8vw;
+}
+
+.schoolScarf {
+    height: 13vw;
 }
 
 .flipped {
+    transform: rotate(180deg);
+}
+
+.mirror {
     transform: rotateY(180deg);
 }
 
@@ -359,7 +380,7 @@
     height: 0;
     width: 0;
     position: absolute;
-    left: 2.7vw;
+    left: 2.9vw;
     border-style: solid;
     border-width: 1vw 0 .5vw 4vw;
     border-color: transparent transparent transparent rgb(153, 84, 142);
@@ -404,7 +425,7 @@
     height: 0;
     width: 0;
     position: absolute;
-    left: -3.5vw;
+    left: -3.9vw;
     border-style: solid;
     border-width: .5vw 4vw 1vw 0;
     border-color: transparent rgb(153, 84, 142) transparent transparent;
@@ -590,5 +611,69 @@
     transform: rotate(-30deg) skew(25deg);
     left: 1.5vw;
     top: .7vw;
+    z-index: 3;
+}
+
+/*********** HIRAIKOTSU *************/
+.hiraikotsu>.bodyLeft {
+    height: 3vw;
+    width: 0;
+    position: absolute;
+    border-right: 20vw solid rgb(225, 212, 178);
+    border-bottom: 1vw solid transparent;
+    border-top: 1vw solid transparent;
+    transform: rotate(10deg);
+    left: 6.5vw;
+    top: 1vw;
+}
+
+.hiraikotsu>.bodyLeft::after {
+    content: '';
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(225, 212, 178);
+    border-radius: 50% 0 0 50%;
+    left: -2.5vw;
+}
+
+.hiraikotsu>.bodyLeft::before {
+    content: '';
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(150, 90, 58);
+    z-index: 3;
+}
+
+.hiraikotsu>.bodyRight {
+    height: 3vw;
+    width: 0;
+    position: absolute;
+    border-left: 20vw solid rgb(225, 212, 178);
+    border-bottom: 1vw solid transparent;
+    border-top: 1vw solid transparent;
+    transform: rotate(-10deg);
+    left: 25vw;
+    top: 1vw;
+}
+
+.hiraikotsu>.bodyRight::after {
+    content: '';
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(225, 212, 178);
+    border-radius: 0 50% 50% 0;
+    left: -.8vw;
+}
+
+.hiraikotsu>.bodyRight::before {
+    content: '';
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    background-color: rgb(150, 90, 58);
+    left: -3vw;
     z-index: 3;
 }
